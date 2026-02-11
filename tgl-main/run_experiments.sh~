@@ -1,0 +1,44 @@
+#!/bin/bash
+
+
+# datasets=("mooc" "wikipedia" "uci" "reddit")
+datasets=("wikipedia")  # reddit also left
+uptos=(0.7 0.8 0.9)
+
+strategies=(
+    # "random"
+    "ts_tpr_remove_mss"
+    "ts_tpr_remove_cosine"
+    "ts_tpr_remove_euclidean"
+    "ts_tpr_remove_jaccard"
+    "ts_tpr_remove_wasserstein"
+    "ts_tpr_remove_kl_divergence"
+    "ts_tpr_remove_chebyshev"
+    "ts_tpr_remove_jensen_shannon_divergence"
+    "ts_tpr_remove_TER"
+    "ts_tpr_remove_mss_2"
+    "ts_tpr_remove_combined_ter"
+)
+
+
+
+
+for dataset in "${datasets[@]}"; do
+    # Iterate over each sparsification level
+    for upto in "${uptos[@]}"; do
+        # Iterate over each strategy
+        for strategy in "${strategies[@]}"; do
+            echo "**********************************************************************************************************************"
+            echo "                                 Processing: $dataset $strategy $nss $upto         "
+            echo "**********************************************************************************************************************"
+            # Run the script with the specified arguments
+            python train2.py --data $dataset --config ./config/TGN.yml --ss $strategy --upto $upto --eval_neg_samples 600
+            echo "**********************************************************************************************************************"
+            echo "                                Completed for $strategy                                  "
+            echo "**********************************************************************************************************************"
+        done
+    done
+done
+
+
+

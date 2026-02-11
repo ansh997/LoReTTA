@@ -1,0 +1,33 @@
+# Large artifacts and datasets
+*.pt
+*.pth
+*.pkl
+*.npy
+*.npz
+*.csv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.zip
+*.tar
+*.gz
+*.7z
+MIDAS.Python-master/out/DARPA_Score.txt
+
+# Generated binaries/build outputs
+*.o
+*.so
+*.a
+*.out
+build/
+dist/
+
+# Logs and caches
+*.log
+__pycache__/
+.ipynb_checkpoints/
+
+# Local virtual environments
+.venv/
+venv/

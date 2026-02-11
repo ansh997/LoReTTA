@@ -1,0 +1,11 @@
+Processing: wikipedia ts_tpr_remove_mss  0.7
+Namespace(dataset_name='wikipedia', upto=0.7, strategy='ts_tpr_remove_mss')
+percentage of train data: 70.00%
+	In EL_sparsify dataset_name='wikipedia'
+Save: False
+	reading wikipedia_ts_tpr_remove_mss_sparsified_0.7.csv...  done
+data sampling successful.
+length of sparsified graph: 77030, percentage of sparsified train data: 69.88%
+Sparsification done
+starting negative samplingAdding negative samples for timestamps 0 to 429397.0
+An error occurred: A process in the process pool was terminated abruptly while the future was running or pending.
