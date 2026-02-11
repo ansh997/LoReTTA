@@ -30,7 +30,7 @@ cd DyGLib
 uv venv --python 3.11 .venv
 ```
 
-Install key dependencies (already validated in this workspace):
+Install key dependencies:
 
 ```bash
 uv pip install --python .venv/bin/python \
@@ -112,7 +112,7 @@ To stabilize imports in this workspace:
 
 ## Citation
 
-If you use this LoReTTA results, please cite:
+Please cite:
 
 ```bibtex
 @misc{pal2025lorettalowresourceframework,
