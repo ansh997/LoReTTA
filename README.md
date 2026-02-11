@@ -112,7 +112,7 @@ To stabilize imports in this workspace:
 
 ## Citation
 
-If you use this workspace or LoReTTA results, please cite:
+If you use this LoReTTA results, please cite:
 
 ```bibtex
 @misc{pal2025lorettalowresourceframework,
